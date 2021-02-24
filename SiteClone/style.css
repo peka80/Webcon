@@ -204,3 +204,39 @@ hgroup h5 span {
 .wrap h5 {
     color: var(--lightGray);
 }
+
+/* Blog */
+
+.blog {
+    padding: 80px 0;
+}
+
+.blog h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--blue);
+}
+
+.blog h2 + p {
+    text-align: center;
+}
+
+.blog img {
+    width: 100%;
+}
+
+.blog article {
+    width: 50%;
+    float: left;
+    padding: 30px;
+}
+
+.blog h3 {
+    color: var(--blue);
+    font-size: 1.5rem;
+}
+
+.blog p {
+    color: var(--gray);
+    padding: 20px 0;
+}
