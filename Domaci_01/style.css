@@ -48,8 +48,8 @@ ul {
 header {
     background-image: url(./backimage.jpg);
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    /* background-position: center; */
+    /* background-attachment: fixed; */
 
 }
 
@@ -97,11 +97,18 @@ hgroup h4 {
             SECTION 
 ********************************/
 
-section h2 {
+.container h2 {
     font-family: var(--fontFamily);
     font-size: 2rem;
     text-align: center;
     margin-top: 35px;
+}
+
+.container article {
+    font-family: sans-serif;
+    border: 10px dashed black;
+    margin: 40px;
+    padding: 30px;
 }
 
 
