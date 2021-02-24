@@ -3,9 +3,10 @@
     --fontFamily: 'Raleway', sans-serif;
     --fontSize: 16px;
     --blue: #5283bf;
-    --darkenBlue: #6692c8
+    --darkenBlue: #6692c8;
     --white: #fff;
     --gray: #9b9b9b;
+    --lightGray: rgba(255, 255, 255, 0.55);
     --transition: .4s ease;
 
 }
@@ -31,4 +32,122 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     max-width: 1140px;
+    /* border: 1px solid white; */
+    margin: 0 auto;
+}
+
+.container::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    padding: 10px 15px;
+    background: var(--blue);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: var(--transition);
+    margin-top: 20px;
+}
+
+button:hover {
+    color: var(--darkenBlue);
+}
+
+/* HEADER */
+
+header {
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-top: 0.5em solid var(--blue);
+}
+
+nav {
+    padding: 50px 0;
+}
+
+nav .logo {
+    float: left;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    float: left;
+    margin: 0 30px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a:hover {
+    color: var(--gray);
+    transition: var(--transition);
+    transform: scale(1.2);
+    display: block;
+}
+
+hgroup {
+    text-align: center;
+    padding: 50px 0 150px 0;
+}
+
+hgroup h1 {
+    font-size: 4rem;
+    color: var(--white);
+}
+
+hgroup h5 {
+    font-size: 1em;
+    color: var(--lightGray);
+}
+
+hgroup h5 span {
+    text-transform: uppercase;
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.first article:nth-child(1) {
+    border-right: 1px solid var(--gray);
+    padding: 0 40px;
+}
+
+.first article:nth-child(2) {
+    border-right: 1px solid var(--gray);
+    padding: 0 40px;
+}
+
+.first article:nth-child(3) {
+    padding: 0 40px;
+}
+
+.first h2 {
+    color: var(--darkenBlue);
+    line-height: 1.5;
+    font-size: 1.35em;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
