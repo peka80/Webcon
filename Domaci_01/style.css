@@ -102,6 +102,7 @@ hgroup h4 {
     font-size: 2rem;
     text-align: center;
     margin-top: 35px;
+    text-decoration: underline overline;
 }
 
 .container article {
