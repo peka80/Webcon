@@ -47,6 +47,23 @@ body {
   color: var(--primary);
 }
 
+.whiteBtn {
+  padding: 20px 35px;
+  margin-top: 40px;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  background: var(--white);
+  color: var(--secondary);
+  border: none;
+  border-radius: 9px;
+  transition: var(--transition);
+}
+
+.whiteBtn:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
 /********************************** 
             HEADAER 
 **********************************/
@@ -118,16 +135,16 @@ hgroup .blueBtn {
               FIRST 
 **********************************/
 
-section {
+.first {
   padding: var(--padding);
 }
 
-section h2 {
+.first h2 {
   text-align: center;
   font-size: 3rem;
 }
 
-section h4 {
+.first h4 {
   text-align: center;
   font-size: 1.4rem;
   color: var(--gray);
@@ -169,3 +186,45 @@ section h4 {
   background: var(--white);
   color: var(--primary);
 }
+
+/********************************** 
+              SECOND 
+**********************************/
+
+.second {
+  background: var(--secondary);
+  padding: var(--padding);
+  text-align: center;
+}
+
+.second h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.second h4 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--lightGray);
+}
+
+.second p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 40px;
+  text-align: center;
+  width: 70%;
+  line-height: 2rem;
+}
+
+.second p a {
+  color: var(--white);
+}
+
+.second p a:hover {
+  text-decoration: none;
+}
+
+/********************************** 
+              FOOTER 
+**********************************/
