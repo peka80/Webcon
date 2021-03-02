@@ -1,28 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-root {
-    --primary: #181818;
-    --secondary: #2651a8;
-    --gray: #585858;
-    --white: #fff;
-    --lightGray: #a2a2a2;
-    --gradient: #1d1d1d;
-    --fontSize: 16px;
-    --fontFamily: 'Didact Gothic', sans-serif;
-    --padding: 80px 0;
-    --transition: .4s ease;
+:root {
+  --primary: #181818;
+  --secondary: #2651a8;
+  --gray: #585858;
+  --white: #fff;
+  --lightGray: rgba(255, 255, 255, 0.6);
+  --fontSize: 16px;
+  --fontFamily: "Didact Gothic", sans-serif;
+  --padding: 80px 0;
+  --transition: 0.4s ease;
 }
 
 body {
-    font-family: var(--fontFamily);
-    font-size: var(--fontSize);
-    line-height: 1.5;
-    color: var(--primary);
+  font-family: var(--fontFamily);
+  font-size: var(--fontSize);
+  line-height: 1.5;
+  color: var(--primary);
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.blueBtn {
+  padding: 20px 35px;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  background: var(--secondary);
+  color: var(--white);
+  border: none;
+  border-radius: 9px;
+  transition: var(--transition);
+}
+
+.blueBtn:hover {
+  background: var(--white);
+  color: var(--primary);
+}
+
+.whiteBtn {
+  padding: ;
+}
+
+/********************************** 
+HEADAER 
+**********************************/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: var(--padding);
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 45%;
+}
+
+header nav ul li {
+  text-transform: uppercase;
+}
+
+header nav ul li a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: var(--white);
+  padding: 15px 25px;
+  transition: var(--transition);
+}
+
+header nav ul li a:hover {
+  background: var(--secondary);
+  border-radius: 9px;
+}
+
+.logo {
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--white);
+}
+
+hgroup {
+  margin-top: 200px;
+}
+
+hgroup h1 {
+  font-size: 4rem;
+  color: var(--white);
+}
+
+hgroup h4 {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+hgroup .blueBtn {
+  margin-top: 60px;
+}
