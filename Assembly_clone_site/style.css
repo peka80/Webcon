@@ -14,8 +14,8 @@
   --lightGray: rgba(255, 255, 255, 0.6);
   --fontSize: 16px;
   --fontFamily: "Didact Gothic", sans-serif;
-  --padding: 80px 0;
-  --transition: 0.4s ease;
+  --padding: 80px 0 112px 0;
+  --transition: 0.3s ease;
 }
 
 body {
@@ -47,11 +47,10 @@ body {
 }
 
 .whiteBtn {
-  padding: ;
 }
 
 /********************************** 
-HEADAER 
+            HEADAER 
 **********************************/
 
 header {
@@ -115,4 +114,59 @@ hgroup h4 {
 
 hgroup .blueBtn {
   margin-top: 60px;
+}
+
+/********************************** 
+              FIRST 
+**********************************/
+
+section {
+  padding: var(--padding);
+}
+
+section h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+section h4 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--gray);
+}
+
+.artikli {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.artikli > div {
+  display: inline-block;
+  width: 384px;
+}
+
+.artikli div:nth-child(1) {
+  margin-right: 20px;
+}
+
+.artikli div:nth-child(2) {
+  margin-right: 20px;
+}
+
+.artikli button {
+  margin-top: 40px;
+  border: 1px solid var(--secondary);
+  border-radius: 6px;
+  padding: 15px 35px;
+  background: var(--secondary);
+  color: var(--white);
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  transition: var(--transition);
+}
+
+.artikli button:hover {
+  background: var(--white);
+  color: var(--primary);
 }
