@@ -228,3 +228,14 @@ hgroup .blueBtn {
 /********************************** 
               FOOTER 
 **********************************/
+
+footer {
+  text-align: center;
+  padding: var(--padding);
+  background: var(--primary);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+footer p a {
+  color: rgba(255, 255, 255, 0.6);
+}
