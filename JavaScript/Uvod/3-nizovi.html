@@ -10,12 +10,33 @@
     <h1>Nizovi</h1>
     <hr />
     <script>
-      var kodiranjeUzivoSredom = ["html", "css", "js", "php"];
+      var kodiranjeUzivoSredom = ['html', 'css', 'js', 'php'];
       // alert(kodiranjeUzivoSredom.length);
 
-      var frameworks = new Array("React", "Vue JS", "Angular");
-      document.write(frameworks);
-      document.write(frameworks[0]);
+      var frameworks = new Array('React', 'Vue JS', 'Angular');
+      // document.write(frameworks);
+      // document.write(frameworks[0]);
+
+      let program = ['html', 'css', 'javascript', 'php', 'wp', 'sass'];
+      // console.log(program);
+      console.log(program[3]);
+
+      let jsFrameworks = [
+        'React',
+        'Vue JS',
+        ['Backbone', 'jQuery'],
+        'Angular',
+        40,
+        null,
+        undefined,
+      ];
+      console.log(jsFrameworks);
+      console.log(
+        'Neki od frejmvorka su zastareli, prvi je ' +
+          jsFrameworks[2][0] +
+          ', a drugi je ' +
+          jsFrameworks[2][1]
+      );
     </script>
   </body>
 </html>
