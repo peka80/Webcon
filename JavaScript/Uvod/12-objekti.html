@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+  </head>
+  <body>
+    <h1>Objekti</h1>
+    <hr />
+    <script>
+      let instruktor = {
+        ime: 'Petar',
+        age: 41,
+        posao: 'Web developer, designer, predavac',
+        porodica: ['Dragana', 'Milica'],
+        adresa: {
+          ulica: 'Djordja Johana Niksica',
+          broj: 28,
+          grad: 'Novi Sad',
+        },
+      };
+      instruktor.hobi = 'vaterpolo';
+      console.log(instruktor.ime);
+      console.log(
+        instruktor.ime +
+          ' ima ' +
+          instruktor.age +
+          ' godine i radi kao ' +
+          instruktor.posao +
+          '.'
+      );
+      console.log(
+        instruktor.ime +
+          ' se trenutno najviše druži sa ' +
+          instruktor.porodica[1]
+      );
+      console.log(
+        instruktor.ime +
+          ' zivi u ulici ' +
+          instruktor.adresa.ulica +
+          ' na broju ' +
+          instruktor.adresa.broj +
+          ' u ' +
+          instruktor.adresa.grad
+      );
+      console.log(
+        instruktor.ime + ' u slobodno vreme voli da igra ' + instruktor.hobi
+      );
+    </script>
+  </body>
+</html>
