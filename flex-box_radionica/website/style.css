@@ -140,3 +140,31 @@ header p {
 .blog .col {
   flex: 0 0 47%;
 }
+/****************************** 
+            FOOTER
+******************************/
+footer {
+  padding: var(--padding);
+  background: var(--gray);
+  text-align: center;
+  color: var(--lightGray);
+}
+
+footer a {
+  font-size: 2rem;
+  color: var(--blue);
+  margin-right: 10px;
+}
+
+footer a:hover {
+  color: var(--bodyColor);
+  transition: var(--transition);
+}
+
+footer hr {
+  background: var(--bodyColor);
+  border: none;
+  height: 1px;
+  width: 50%;
+  margin: 30px auto;
+}
