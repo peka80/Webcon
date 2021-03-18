@@ -15,12 +15,13 @@
       ipsum molestias consectetur doloremque odit est voluptatum modi expedita
       sapiente voluptatibus nobis natus! Et quo ullam est, corporis fuga iusto.
     </p>
-    <u class="neuredjena">
+    <ul class="uredjena">
       <li>Elemenat</li>
       <li>Elemenat</li>
       <li class="izdvojen">Elemenat</li>
       <li>Elemenat</li>
-    </u>
+    </ul>
+
     <h2>Drugi naslov</h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur soluta
@@ -28,17 +29,28 @@
       incidunt aspernatur corrupti consectetur ab quam voluptates et, maxime
       ipsam consequatur?
     </p>
-    <ul class="uredjena">
+    <ol class="neuredjena">
       <li>Elemenat 1</li>
       <li class="izdvojen">Elemenat 2</li>
       <li>Elemenat 3</li>
       <li>Elemenat 4</li>
-    </ul>
+    </ol>
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
-    <script></script>
+    <script>
+      $('li').css('color', 'blue');
+      $('li').filter('.izdvojen').css('color', 'red');
+      $('ol').find('li').css('color', 'orangered');
+      $('ul').find('li').css('color', 'green');
+      $('.izdvojen').next().css('background', 'blue');
+      $('.izdvojen').prev().css('background', 'yellow');
+      $('ol').children().css('color', 'black');
+      $('li').parent().css('background', 'lightgray');
+      $('li').not('.izdvojen').css('background', 'violet');
+    </script>
   </body>
 </html>
