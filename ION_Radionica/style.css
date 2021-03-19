@@ -19,9 +19,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--fontFamily);
   font-size: var(--fontSize);
+  position: relative;
 }
 
 h1,
@@ -53,25 +58,43 @@ h2 {
   color: var(--white);
   letter-spacing: 1.5px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .blue {
-  background-color: var(--primary);
+  background: linear-gradient(
+    45deg,
+    rgb(98, 157, 209),
+    rgb(152, 188, 219),
+    rgb(98, 157, 209),
+    rgb(200, 218, 235),
+    rgb(98, 157, 209),
+    rgb(98, 157, 209),
+    rgb(98, 157, 209)
+  );
+  background-size: 400% 100%;
   border: 2px solid var(--primary);
 }
 
 .blue:hover {
-  background-color: var(--primaryHover);
-  border-color: var(--primaryHover);
+  background-position: 100% 0;
 }
 
 .transparent {
-  background-color: transparent;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0)
+  );
+  background-size: 400% 100%;
   border: 2px solid var(--white);
 }
 
 .transparent:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-position: 100% 0;
 }
 
 ul {
@@ -90,8 +113,12 @@ section {
     NAVIGACIJA
 **********************************/
 nav {
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.651);
   background-color: var(--white);
   padding: 10px 0;
+  z-index: 10;
 }
 
 nav .container {
@@ -127,7 +154,19 @@ nav .container ul li:hover a {
 nav .container .logo {
   font-size: 1.5rem;
 }
-
+/********************************** 
+    ON TOP
+**********************************/
+.onTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1rem;
+  padding: 15px 10px;
+  border-radius: 10px;
+  background-color: var(--primary);
+  color: var(--white);
+}
 /********************************** 
     HEADER
 **********************************/
@@ -186,6 +225,9 @@ header hgroup button {
   border: 1px solid var(--textColor);
   padding: 20px 30px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card i {
@@ -194,7 +236,11 @@ header hgroup button {
   background-color: var(--primary);
   width: 100px;
   height: 100px;
-  line-height: 100px;
+  /* line-height: 100px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   border: 5px solid var(--white);
   box-shadow: 0 0 1px black;
   border-radius: 50%;
@@ -230,8 +276,19 @@ header hgroup button {
   letter-spacing: 1.5px;
   margin-top: 20px;
 }
+.item {
+  display: flex;
+}
+.slide-card {
+  flex: 0 0 60%;
+}
 .slide-text {
   margin-top: 25px;
+  flex: 0 0 40%;
+}
+.slide-card img {
+  display: block;
+  width: 100%;
 }
 .slide-text h4 {
   font-size: 1.8rem;
@@ -284,10 +341,33 @@ aside i {
   font-size: 3rem;
   transition: var(--transition);
 }
+.card-social {
+  position: relative;
 
-aside i:hover {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside hr {
+  border: 1px solid var(--primary);
+}
+.card-text {
+  position: absolute;
+  bottom: 0;
+  color: var(--white);
+  background-color: var(--primary);
+  width: 100%;
+  height: 0px;
+  transition: var(--transition);
+}
+aside .card-social:hover i {
   color: var(--textColor);
   transform: rotate(180deg) scale(1.2);
+}
+aside .card-social:hover .card-text {
+  height: 35px;
+  padding: 10px;
 }
 /********************************** 
     FOOTER
