@@ -388,7 +388,75 @@ footer p span {
   margin: 0 20px;
   padding: 0 20px;
 }
-
+/********************************** 
+    SIGN UP PAGE
+**********************************/
+.sign-up {
+  background-image: url('./images/banner.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 85vh;
+  color: var(--white);
+  text-align: center;
+}
+.sign-up h2 {
+  font-size: 2.2rem;
+}
+.sign-up form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  background-color: rgba(128, 0, 128, 0.495);
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 50px;
+  transform: translateX(-190%);
+  overflow: hidden;
+  transition: 0.8s all ease;
+}
+.form-slideIn {
+  transform: translateX(0%) !important;
+}
+.form-open {
+  width: 50% !important;
+}
+form h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+form label {
+  position: relative;
+  width: 80%;
+  margin: 0 auto 30px auto;
+}
+form label,
+form button,
+form h3 {
+  opacity: 0;
+  transition: 0.5s opacity ease-in-out;
+}
+.opacity {
+  opacity: 1 !important;
+}
+form label i {
+  color: black;
+  /* background-color: var(--white); */
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+form label input {
+  padding: 8px 0 8px 40px;
+  font-size: 1rem;
+  width: 100%;
+}
+input::placeholder {
+  font-size: 1rem;
+}
 /********************************** 
     RESPONSIVE
 **********************************/

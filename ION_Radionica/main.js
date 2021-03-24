@@ -31,3 +31,14 @@ $(window).scroll(function () {
     onTop.fadeOut(600);
   }
 });
+$(document).ready(function () {
+  $('form').addClass('form-slideIn');
+  $('form').on('transitionend', function () {
+    $('form').addClass('form-open');
+    if ($('.form-open').width() > 400) {
+      $('label').addClass('opacity');
+      $('form h3').addClass('opacity');
+      $('form button').addClass('opacity');
+    }
+  });
+});
