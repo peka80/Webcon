@@ -17,10 +17,6 @@ header {
   align-items: center;
 }
 
-footer {
-  text-align: center;
-}
-
 body {
   line-height: 1.6;
   font-size: 18px;
@@ -37,6 +33,14 @@ h2 {
   font-size: 35px;
 }
 
+p {
+  text-align: justify;
+}
+
+footer p {
+  text-align: center;
+}
+
 header ul {
   list-style-position: inside;
   list-style: none;
@@ -50,11 +54,11 @@ main {
 }
 
 section {
-  flex: 0 0 68%;
+  flex: 0 0 66%;
 }
 
 aside {
-  flex: 0 0 28%;
+  flex: 0 0 26%;
 }
 
 .widget {
@@ -70,9 +74,18 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+hr {
+  margin: 10px 0;
+}
+
 nav {
   background: #2b333d;
-  width: 30%;
+  width: 40%;
 }
 nav ul {
   display: flex;
@@ -80,7 +93,6 @@ nav ul {
 }
 nav ul li a {
   color: white;
-  text-decoration: none;
   font-size: 15px;
   text-transform: uppercase;
 }
